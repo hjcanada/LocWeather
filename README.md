@@ -22,7 +22,7 @@ Backend: Node.js
 
 ## Features:
 - Aquire and display the latest weather info (e.g., weather description, temperature, humility, wind speed, etc.) at user's location, by using a valid OpenWeatherMap API Key;
-- The temperature is available in both Celisius and Fahrenheit. Change by clicking the temperature bar;
+- The temperature is available in both Celsius and Fahrenheit. Change by clicking the temperature bar;
 - The background and weather icon will change according to different weather description;
 
 
