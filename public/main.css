@@ -1,0 +1,37 @@
+.info {
+	font-family: "Montserrat";
+	color: black;
+}
+
+.row {
+	float: none;
+	margin: 5px;
+}
+
+.btn {
+	float:none;
+}
+
+.col-lg-4 {
+	margin: 0 auto;
+	float: none;
+}
+
+.col-lg-3 {
+	margin:0 auto;
+	float: none;
+}
+
+.footer {
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.75);
+	position: absolute;
+}
+
+.footxt {
+	color: grey;
+	height: 30px;
+	line-height: 35px;
+	text-align: center;
+}

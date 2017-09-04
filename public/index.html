@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>Local Weather App</title>
+<meta charset="utf-8" name="author" content="Jun Hu">
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="main.css" rel="stylesheet" type="text/css">
+
+<!--<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="controller/controller.js"></script>
+
+</head>
+
+
+<body class="text-center info" ng-app="myApp" ng-controller="myCtrl" ng-style="myObj" background="img/background.jpg">
+
+<h1>Local Weather App</h1>
+<br>
+<p><b>OpenWeatherMap AppID:</b></p>
+
+<div class="row">
+	<div class="col-lg-4">
+		<div class="input-group">
+		<input type="text" class="form-control" ng-model="appid" ng-init="appid='bac93b8c71336de8b12e52d1ec4a8b71'">
+		<span class="input-group-btn">
+		<button type="button" class="btn" ng-click="wthAquire()">Go</button>
+		</span>
+		</div>
+	</div>
+</div>
+<br>
+<ul class="list-group col-lg-3" ng-show="value1">
+	<li class="list-group-item list-group-item-success">City: {{city | uppercase}}</li>
+	<li class="list-group-item list-group-item-warning">Weather: {{description | uppercase}}<img ng-src="{{icon}}"></li>
+	<a href="" class="list-group-item list-group-item-info" ng-init="uchange=true" ng-show="uchange" ng-click="uchange=!uchange">Celsius Temperature: {{cTemp}}</a>
+	<a href="" class="list-group-item list-group-item-info" ng-show="!uchange" ng-click="uchange=!change">Fahrenheit Temperature: {{fTemp}}</a>
+	<li class="list-group-item list-group-item-danger">Wind Speed: {{windspeed}}</li>
+	<li class="list-group-item list-group-item-success">Humidity: {{humidity}}</li>
+</ul>
+
+<ul class="list-group col-lg-3" ng-show="value2">
+	<li class="list-group-item list-group-item-danger">Error: {{invalid}}</li>
+</ul>
+
+<footer class="footer">
+	<div>
+	<p class="footxt">Designed by Jun Hu (junhu.acl@gmail.com)</p>
+	</div>
+</footer>
+
+</body>
+
+</html>
