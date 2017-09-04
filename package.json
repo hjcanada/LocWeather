@@ -1,0 +1,24 @@
+{
+	"name": 	"Local Weather App",
+	"version": 	"1.0.0",
+  	"license": 	"MIT",
+	"description": 	"aquire local weather info",
+  	"author": 	"Jun Hu",
+	"keywords":	"weather"
+  	"main": 	"server.js",
+  	"scripts": 	{"start":"node server.js"},
+  	"bugs": 	{"url": "https://github.com/hjcanada/locweather/issues"}
+  	"engine": 	{
+		"node":	"0.10.24"
+		"npm":	"1.3.21"
+	},
+  	"dependencies": {
+		"express": "4.15.4",
+		"request": "2.81.0"
+	},
+  	"repository": 	{
+    		"type": "git",
+    		"url": 	"https://github.com/hjcanada/locweather.git"
+  	},
+  	"devDependencies": {},
+}
