@@ -50,7 +50,8 @@ app.controller("myCtrl", function($scope, $http) {
 					};
 					break;
 				case "Rain":
-				case "Drizzle": 
+				case "Drizzle":
+				case "Thunderstorm": 
 					$scope.myObj = {
 						"background":"url('../img/rain.jpg')",
 						"background-size":"cover"

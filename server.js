@@ -1,9 +1,10 @@
 var express = require("express");
 var request = require("request");
 
+var port = 3000;
 var app = express();
 
-app.get("/weather", function(req, res) {
+app.get("/", function(req, res) {
 	var lat = req.query.lat;
 	var lon = req.query.lon;
 	var appid = req.query.appid;
@@ -40,6 +41,6 @@ app.get("/weather", function(req, res) {
 
 app.use(express.static(__dirname + "/public"));
 
-app.listen(3000, function() {
-	console.log("Server is listening on PORT 3000");
+app.listen(port, function() {
+	console.log("Server is listening on PORT " + port);
 });
