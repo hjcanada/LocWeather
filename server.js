@@ -4,7 +4,7 @@ var request = require("request");
 var port = 3000;
 var app = express();
 
-app.get("/", function(req, res) {
+app.get("/weather", function(req, res) {
 	var lat = req.query.lat;
 	var lon = req.query.lon;
 	var appid = req.query.appid;
