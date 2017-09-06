@@ -7,7 +7,8 @@ An Express application using OpenWeatherMap API and HTML5 geolocation to show th
 
 ```
 API: OpenWeatherMap(https://openweathermap.org/api)
-Frontend: Angular.js, bootstrap
+UI: bootstrap
+Frontend: Angular.js
 Backend: Node.js
 ```
 
