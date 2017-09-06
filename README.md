@@ -14,7 +14,7 @@ Backend: Node.js
 
 ## Installation
 1. Clone the repository: ```git clone https://github.com/hjcanada/locweather.git``` 
-2. Install the required packages: ```npm install -g --save```
+2. Install the required packages: ```npm install```
 3. Start the server: ```node server.js```
 4. Open the browser (recommend Firefox) with: ```http://localhost:3000```
 5. Use the default or you own OpenWeatherMap API Key to aquire the latest weather info at you current location
