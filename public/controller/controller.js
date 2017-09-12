@@ -1,6 +1,6 @@
 var app = angular.module("myApp", []);
 
-app.controller("myCtrl", function($scope, $http) {
+app.controller("myCtrl", ["$scope", "$http", function($scope, $http) {
 	
 	$scope.wthAquire = function() {
 
@@ -88,4 +88,4 @@ app.controller("myCtrl", function($scope, $http) {
 		});
 		});
 	};
-});
+}]);
